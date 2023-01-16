@@ -3,6 +3,7 @@ package com.kata.app;
 import com.kata.app.exception.*;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Calculator {
 
@@ -106,6 +107,11 @@ public class Calculator {
 
         char ch1 = Str[0].charAt(0);
         char ch2 = Str[2].charAt(0);
+
+        boolean result0 = Pattern.matches("^[*+-/]$", Str[1]);
+        if(!result0) {
+            throw new IncorrectOperandException(Str[0]);
+        }
 
         if(RomanNumber.getName(Str[0]).equalsIgnoreCase("NotExist") || RomanNumber.getName(Str[2]).equalsIgnoreCase("NotExist")) {
             throw new NotExistNumberException(Str[0]);

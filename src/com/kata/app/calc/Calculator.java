@@ -17,8 +17,6 @@ public class Calculator {
             case "-" -> Math.subtractExact(num1, num2);
             case "*" -> Math.multiplyExact(num1, num2);
             case "/" -> num1 / num2;
-            case "^" -> (int) Math.pow(num1, num2);
-            case "%" -> num1 % num2;
             default -> 0;
         };
     }
