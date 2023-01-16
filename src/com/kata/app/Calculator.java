@@ -113,7 +113,7 @@ public class Calculator {
             throw new IncorrectOperandException(Str[0]);
         }
 
-        if(RomanNumber.getName(Str[0]).equalsIgnoreCase("NotExist") || RomanNumber.getName(Str[2]).equalsIgnoreCase("NotExist")) {
+        if(!(ch2 >= '0' && ch2 <= '9') && (RomanNumber.getName(Str[0]).equalsIgnoreCase("NotExist") || RomanNumber.getName(Str[2]).equalsIgnoreCase("NotExist"))) {
             throw new NotExistNumberException(Str[0]);
         }
 
