@@ -10,6 +10,12 @@ public class Calculator {
     static Scanner scan = new Scanner(System.in);
 
     public static void main (String[] args) {
+       /*  If you want change Roman number to Integer uncomment me .. Leetcode task number 13
+        String expression = "LVIII";
+        com.kata.app.calc.Roman.romanToInt(expression);
+        */
+
+
         String expression = " ";
         char ch;
         int returnNumber;
