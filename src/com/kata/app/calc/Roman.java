@@ -32,8 +32,6 @@ public class Roman {
                 num = num + number[index];
             }
         }
-        System.out.println(num);
         return num;
-
     }
 }
